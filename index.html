@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- tittle text  -->
+    <title>Bootstrap demo</title>
+    <!-- Bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+<header>
+<section class="container mx-auto">
+        <nav class="navbar navbar-expand-lg bg-success-subtle mt-3 mb-5 rounded">
+          <div class="container-fluid  justify-content-between ">
+            <a class="navbar-brand fw-bold fs-2" href="#">Interactive <br>
+              <span class="text-secondary fw-normal fs-5">Geometry Genius</span></a>
+           
+                <button class="btn btn-outline-success fw-bold ">Blog</button>
+              </form>
+            
+          </div>
+        </nav>
+</section>
+</header>
+<main>
+<section class="container mx-auto">
+
+<div class="row ms-4 ">
+   <!-- triangle section  -->
+  <div class="col">
+      <div id="card" class="card p-3 mb-3" style="width: 18rem;">
+        <img src="images/triangle.png" class="card-img-top" alt="..." style="width: 250px; height: 160px;">
+        <div class="card-body text-center">
+          <h5 class="card-title">Triangle</h5>
+          <p class="card-text">Area (A) = 0.5 × b × h</p>
+            <div class="d-flex gap-2">
+              <div>
+                <input class="bg-success-subtle rounded" type="text" id="input-1" placeholder=" b" style="width: 80px;"> cm 
+              </div>
+              <div>
+                <input class=" bg-success-subtle rounded" type="text"id="input-2" placeholder=" h" style="width: 80px;"> cm
+              </div>
+            </div>
+          <button id="btn-triangle" class="btn btn-success fw-bold px-5 mt-3 ">Calculate</button>
+        </div>
+      </div>
+
+  </div>
+      <!-- Rectangle section  -->
+  <div class="col">
+      <div id="card" class="card p-3  mb-3" style="width: 18rem;">
+        <img src="images/rectangle.png" class="card-img-top" alt="..."  style="width: 250px;">
+        <div class="card-body text-center">
+          <h5 class="card-title">Rectangle</h5>
+          <p class="card-text">Area (A) = w × l</p>
+            <div class="d-flex gap-2">
+              <div>
+                <input id="input-3" class="bg-success-subtle rounded" type="text" placeholder=" w" style="width: 80px;"> cm 
+              </div>
+              <div>
+                <input id="input-4"  class=" bg-success-subtle rounded" type="text" placeholder=" l" style="width: 80px;"> cm
+              </div>
+            </div>
+          <button id="btn-rectangle" class="btn btn-success fw-bold px-5 mt-3 ">Calculate</button>
+        </div>
+      </div>
+
+  </div>
+      <!-- Parallelogram section  -->
+  <div class="col">
+      <div id="card" class="card p-3  mb-3" style="width: 18rem;">
+        <img src="images/parallelogram.png" class="card-img-top" alt="..."  style="width: 250px;  height: 160px;">
+        <div class="card-body text-center">
+          <h5 class="card-title">Parallelogram</h5>
+          <p class="card-text">Area (A) =
+            0.5 × b × h</p>
+            <div class="d-flex gap-2">
+              <div>
+                <input id="input-5" class="bg-success-subtle rounded" type="text" placeholder=" b" style="width: 80px;"> cm 
+              </div>
+              <div>
+                <input id="input-6" class=" bg-success-subtle rounded" type="text" placeholder=" h" style="width: 80px;"> cm
+              </div>
+            </div>
+          <button id="btn-parallelogram" class="btn btn-success fw-bold px-5 mt-3 ">Calculate</button>
+        </div>
+      </div>
+
+  </div>
+
+  <!-- area Calculation  -->
+  <div class="col">
+
+    <div id="card" class="card  mb-3" style="width: 24rem;">
+      <div class="card-body text-center">
+        <h3 class="text-decoration-underline mb-3">Area Calculation</h3>
+        <!-- area calculation list  -->
+      <div class="d-flex gap-5">
+          <div class="mb-3">
+            <p>1.Triangle</p>
+           </div>
+           <div>
+            <p> <span id="result-triangle">0</span> cm <sup>2</sup> </p>
+           </div>
+           <div>      
+             <button type="button" class="btn btn-outline-success " >Covert to m <sup>2</sup></button>
+           </div>
+      </div>
+      <div class="d-flex gap-4">
+          <div class="mb-3">
+            <p class="me-2">2.Rectangle</p>
+           </div>
+           <div>
+            <p> <span id="result-rectangle">0</span> cm <sup>2</sup> </p>
+           </div>
+           <div>      
+             <button type="button" class="btn btn-outline-success ms-4" >Covert to m <sup>2</sup></button>
+           </div>
+      </div>
+      <div class="d-flex gap-4">
+          <div class="mb-3">
+            <p class="me-1">3.Parallelogram</p>
+           </div>
+           <div>
+            <p> <span id="result-parallelogram">0</span> cm <sup>2</sup> </p>
+           </div>
+           <div>      
+             <button type="button" class="btn btn-outline-success ">Covert to m <sup>2</sup></button>
+           </div>
+      </div>
+      <div class="d-flex gap-4">
+          <div class="mb-3">
+            <p class="me-3">4.Rhombus</p>
+           </div>
+           <div>
+            <p class="me-3"> <span id="result-rhombus">0</span>cm <sup>2</sup> </p>
+           </div>
+           <div>      
+             <button type="button" class="btn btn-outline-success " >Covert to m <sup>2</sup></button>
+           </div>
+      </div>
+      <div class="d-flex gap-4">
+          <div class="mb-3">
+            <p class="me-4">5.Pentagon</p>
+           </div>
+           <div>
+            <p class="me-2"> <span id="result-pentagon">0</span>cm <sup>2</sup> </p>
+           </div>
+           <div>      
+             <button type="button" class="btn btn-outline-success " >Covert to m <sup>2</sup></button>
+           </div>
+      </div>
+      <div class="d-flex gap-5">
+          <div class="mb-3">
+            <p>6.Ellipse</p>
+           </div>
+           <div>
+            <p class="me-2"> <span id="result-ellipse">0</span>cm <sup>2</sup> </p>
+           </div>
+           <div>      
+             <button type="button" class="btn btn-outline-success " >Covert to m <sup>2</sup></button>
+           </div>
+      </div>
+
+      </div>
+    </div>
+
+</div>
+
+</div>
+
+<div class="row ms-4">
+ <!-- Rhombus section  -->
+  <div class="col"> 
+      <div id="card" class="card p-3 mb-3" style="width: 18rem;">
+        <img src="images/rhombus.png" class="card-img-top" alt="..." style="width: 250px; height: 160px;">
+        <div class="card-body text-center">
+          <h5 class="card-title">Rhombus</h5>
+          <p class="card-text">Area (A) =
+            0.5 × d<sub>1</sub> × d<sub>2</sub></p>
+            <div class="d-flex gap-2">
+              <div>
+                d<sub>1</sub> <input id="input-7" class="bg-success-subtle rounded" type="text" placeholder=" cm" style="width: 80px;">
+              </div>
+              <div>
+                d<sub>2</sub> <input class=" bg-success-subtle rounded" type="text" id="input-8" placeholder="cm" style="width: 80px;">
+              </div>
+            </div>
+          <button id="btn-rhombus" class="btn btn-success fw-bold px-5 mt-3 ">Calculate</button>
+        </div>
+      </div>
+
+  </div>
+    <!-- Pentagon section  -->
+  <div class="col">
+      <div id="card" class="card p-3  mb-3" style="width: 18rem;">
+        <img src="images/pentagon.png" class="card-img-top" alt="..."  style="width: 250px; height: 160px;">
+        <div class="card-body text-center">
+          <h5 class="card-title">Pentagon</h5>
+          <p class="card-text">Area (A) =
+            0.5 × p × b</p>
+            <div class="d-flex gap-2">
+              <div>
+                <input class="bg-success-subtle rounded" type="text" id="input-9" placeholder=" p" style="width: 80px;"> cm
+              </div>
+              <div>
+                <input class=" bg-success-subtle rounded" type="text"id="input-10" placeholder=" b" style="width: 80px;"> cm
+              </div>
+            </div>
+          <button id="btn-pentagon" class="btn btn-success fw-bold px-5 mt-3 ">Calculate</button>
+        </div>
+      </div>
+
+  </div>
+   <!-- Ellipse section  -->
+  <div class="col"> 
+      <div id="card" class="card p-3  mb-3" style="width: 18rem;">
+        <img src="images/ellipse.png" class="card-img-top" alt="..."  style="width: 250px;  height: 160px;">
+        <div class="card-body text-center">
+          <h5 class="card-title">Ellipse</h5>
+          <p class="card-text">Area (A) = πab</p>
+            <div class="d-flex gap-2">
+              <div>
+                <input class="bg-success-subtle rounded" type="text" id="input-11" placeholder=" a" style="width: 80px;"> cm 
+              </div>
+              <div>
+                <input class=" bg-success-subtle rounded" type="text"id="input-12" placeholder=" b" style="width: 80px;"> cm
+              </div>
+            </div>
+          <button id="btn-ellipse" class="btn btn-success fw-bold px-5 mt-3 ">Calculate</button>
+        </div>
+      </div>
+
+  </div>
+
+</div>
+
+</section>
+</main>
+    
+
+
+    <!-- Bootstrap js link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <!-- js link  -->
+        <script src="script/jiboner-pera.js"></script>
+  </body>
+</html>
