@@ -46,6 +46,8 @@
 //         event.target.style.fill = randomColor();
 //   });
 
+// blog link ==============
+
 // btn triangle  col ==============
 document.getElementById('btn-triangle').addEventListener('click', function(){
 
