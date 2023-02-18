@@ -208,36 +208,36 @@ else if(inputField10 <= 0){
   resultpentagonElement.innerText = mathpentagon;
 })
 // btn ellipse col ============
-document.getElementById('btn-pentagon').addEventListener('click', function(){
+document.getElementById('btn-ellipse').addEventListener('click', function(){
 
-  const inputField9Element = document.getElementById('input-9');
-  const inputField9tStirng = inputField9Element.value;
-  const inputField9  = parseFloat(inputField9tStirng);
-  if(isNaN(inputField9)){
+  const inputField11Element = document.getElementById('input-11');
+  const inputField11tStirng = inputField11Element.value;
+  const inputField11  = parseFloat(inputField11tStirng);
+  if(isNaN(inputField11)){
     alert('please provide a valid number');
    
 }
-  else if(inputField9 <= 0){
+  else if(inputField11 <= 0){
     alert('please use positive number')
   }
 
-  const inputField10Element = document.getElementById('input-10');
-  const inputField10tStirng = inputField10Element.value;
-  const inputField10  = parseFloat(inputField10tStirng);
-  if(isNaN(inputField10)){
+  const inputField12Element = document.getElementById('input-12');
+  const inputField12tStirng = inputField12Element.value;
+  const inputField12  = parseFloat(inputField12tStirng);
+  if(isNaN(inputField12)){
     alert('please provide a valid number');
 }
-else if(inputField10 <= 0){
+else if(inputField12 <= 0){
   alert('please use positive number')
 
 }
 
-  const resultpentagonElement = document.getElementById('result-pentagon');
-  const resultpentagonString = resultpentagonElement.innerText;
-  const resultpentagon = parseFloat(resultpentagonString);
+  const resultellipseElement = document.getElementById('result-ellipse');
+  const resultellipseString = resultellipseElement.innerText;
+  const resultellipse = parseFloat(resultellipseString);
 
-    const mathpentagon = 0.5 * inputField9 * inputField10 ;
-  resultpentagonElement.innerText = mathpentagon;
+    const mathellipse = 3.14 * inputField11 * inputField12 ;
+  resultellipseElement.innerText = mathellipse;
 })
 
 
