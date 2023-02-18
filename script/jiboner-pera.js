@@ -108,43 +108,10 @@ else if(inputField4 <= 0){
   const resultrectangleString = resultrectangleElement.innerText;
   const resultrectangle = parseFloat(resultrectangleString);
 
-    const mathrectangle = 0.5 * inputField3 * inputField4 ;
+    const mathrectangle = inputField3 * inputField4 ;
   resultrectangleElement.innerText = mathrectangle;
 })
 // btn parallelogram col ============
-document.getElementById('btn-triangle').addEventListener('click', function(){
-
-  const inputField1Element = document.getElementById('input-1');
-  const inputField1tStirng = inputField1Element.value;
-  const inputField1  = parseFloat(inputField1tStirng);
-  if(isNaN(inputField1)){
-    alert('please provide a valid number');
-   
-}
-  else if(inputField1 <= 0){
-    alert('please use positive number')
-  }
-
-  const inputField2Element = document.getElementById('input-2');
-  const inputField2tStirng = inputField2Element.value;
-  const inputField2  = parseFloat(inputField2tStirng);
-  if(isNaN(inputField2)){
-    alert('please provide a valid number');
-}
-else if(inputField2 <= 0){
-  alert('please use positive number')
-
-}
-
-  const resulttriangleElement = document.getElementById('result-triangle');
-  const resulttriangleString = resulttriangleElement.innerText;
-  const resulttriangle = parseFloat(resulttriangleString);
-
-    const mathtriangle = 0.5 * inputField1 * inputField2 ;
-  resulttriangleElement.innerText = mathtriangle;
-})
-
-// btn rectangle  col ==============
 document.getElementById('btn-parallelogram').addEventListener('click', function(){
 
   const inputField5Element = document.getElementById('input-5');
@@ -159,22 +126,54 @@ document.getElementById('btn-parallelogram').addEventListener('click', function(
   }
 
   const inputField6Element = document.getElementById('input-6');
-  const inputField6tStirng = inputField4Element.value;
-  const inputField4  = parseFloat(inputField4tStirng);
-  if(isNaN(inputField4)){
+  const inputField6tStirng = inputField6Element.value;
+  const inputField6  = parseFloat(inputField6tStirng);
+  if(isNaN(inputField6)){
     alert('please provide a valid number');
 }
-else if(inputField4 <= 0){
+else if(inputField6 <= 0){
   alert('please use positive number')
 
 }
 
-  const resultrectangleElement = document.getElementById('result-rectangle');
-  const resultrectangleString = resultrectangleElement.innerText;
-  const resultrectangle = parseFloat(resultrectangleString);
+  const resultparallelogramElement = document.getElementById('result-parallelogram');
+  const resultparallelogramString = resultparallelogramElement.innerText;
+  const resultparallelogram = parseFloat(resultparallelogramString);
 
-    const mathrectangle = 0.5 * inputField3 * inputField4 ;
-  resultrectangleElement.innerText = mathrectangle;
+    const mathparallelogram = 0.5 * inputField5 * inputField6 ;
+  resultparallelogramElement.innerText = mathparallelogram;
+})
+// btn rhombus col ============
+document.getElementById('btn-rhombus').addEventListener('click', function(){
+
+  const inputField7Element = document.getElementById('input-7');
+  const inputField7tStirng = inputField7Element.value;
+  const inputField7  = parseFloat(inputField7tStirng);
+  if(isNaN(inputField7)){
+    alert('please provide a valid number');
+   
+}
+  else if(inputField7 <= 0){
+    alert('please use positive number')
+  }
+
+  const inputField8Element = document.getElementById('input-8');
+  const inputField8tStirng = inputField8Element.value;
+  const inputField8  = parseFloat(inputField8tStirng);
+  if(isNaN(inputField8)){
+    alert('please provide a valid number');
+}
+else if(inputField8 <= 0){
+  alert('please use positive number')
+
+}
+
+  const resultrhombusElement = document.getElementById('result-rhombus');
+  const resultrhombusString = resultrhombusElement.innerText;
+  const resultrhombus = parseFloat(resultrhombusString);
+
+    const mathrhombus = 0.5 * inputField7 * inputField8 ;
+  resultrhombusElement.innerText = mathrhombus;
 })
 
 
