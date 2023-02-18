@@ -140,7 +140,7 @@ else if(inputField6 <= 0){
   const resultparallelogramString = resultparallelogramElement.innerText;
   const resultparallelogram = parseFloat(resultparallelogramString);
 
-    const mathparallelogram = 0.5 * inputField5 * inputField6 ;
+    const mathparallelogram = inputField5 * inputField6 ;
   resultparallelogramElement.innerText = mathparallelogram;
 })
 // btn rhombus col ============
@@ -174,6 +174,70 @@ else if(inputField8 <= 0){
 
     const mathrhombus = 0.5 * inputField7 * inputField8 ;
   resultrhombusElement.innerText = mathrhombus;
+})
+// btn pentagon col ============
+document.getElementById('btn-pentagon').addEventListener('click', function(){
+
+  const inputField9Element = document.getElementById('input-9');
+  const inputField9tStirng = inputField9Element.value;
+  const inputField9  = parseFloat(inputField9tStirng);
+  if(isNaN(inputField9)){
+    alert('please provide a valid number');
+   
+}
+  else if(inputField9 <= 0){
+    alert('please use positive number')
+  }
+
+  const inputField10Element = document.getElementById('input-10');
+  const inputField10tStirng = inputField10Element.value;
+  const inputField10  = parseFloat(inputField10tStirng);
+  if(isNaN(inputField10)){
+    alert('please provide a valid number');
+}
+else if(inputField10 <= 0){
+  alert('please use positive number')
+
+}
+
+  const resultpentagonElement = document.getElementById('result-pentagon');
+  const resultpentagonString = resultpentagonElement.innerText;
+  const resultpentagon = parseFloat(resultpentagonString);
+
+    const mathpentagon = 0.5 * inputField9 * inputField10 ;
+  resultpentagonElement.innerText = mathpentagon;
+})
+// btn ellipse col ============
+document.getElementById('btn-pentagon').addEventListener('click', function(){
+
+  const inputField9Element = document.getElementById('input-9');
+  const inputField9tStirng = inputField9Element.value;
+  const inputField9  = parseFloat(inputField9tStirng);
+  if(isNaN(inputField9)){
+    alert('please provide a valid number');
+   
+}
+  else if(inputField9 <= 0){
+    alert('please use positive number')
+  }
+
+  const inputField10Element = document.getElementById('input-10');
+  const inputField10tStirng = inputField10Element.value;
+  const inputField10  = parseFloat(inputField10tStirng);
+  if(isNaN(inputField10)){
+    alert('please provide a valid number');
+}
+else if(inputField10 <= 0){
+  alert('please use positive number')
+
+}
+
+  const resultpentagonElement = document.getElementById('result-pentagon');
+  const resultpentagonString = resultpentagonElement.innerText;
+  const resultpentagon = parseFloat(resultpentagonString);
+
+    const mathpentagon = 0.5 * inputField9 * inputField10 ;
+  resultpentagonElement.innerText = mathpentagon;
 })
 
 
