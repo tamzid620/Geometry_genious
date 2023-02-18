@@ -19,10 +19,10 @@
 //         event.target.style.fill = randomColor();
 //   });
 const card1 = document .getElementById('card-1');
-card1.addEventListener('mouseover', pink);
+card1.addEventListener('mouseover', red);
 
-function pink(){
- document.body.style.backgroundColor = 'pink';
+function red(){
+ document.body.style.backgroundColor = 'red';
 }
 const card2 = document .getElementById('card-2');
 card1.addEventListener('mouseover', plum);
@@ -59,10 +59,10 @@ function blue(){
 }
 
 const card7 = document .getElementById('card-7');
-card1.addEventListener('mouseover', red);
+card1.addEventListener('mouseover', pink);
 
-function red(){
- document.body.style.backgroundColor = 'red';
+function pink(){
+ document.body.style.backgroundColor = 'pink';
 }
 
 // blog link ==============
