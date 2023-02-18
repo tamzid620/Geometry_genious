@@ -2,33 +2,6 @@
 
 
 
-  // <!-- option 1: add onclick function ----------- -->
-  // <button onclick="document.body.style.backgroundColor='yellow'">make Yellow</button>
-// // option 4:  -----------
-// const pinkBUtton = document .getElementById('make-pink');
-// pinkBUtton.addEventListener('click', makePink);
-
-// function makePink(){
-//  document.body.style.backgroundColor = 'pink';
-// }
-
-// // option 4: (another) -----------
-// const makeGreenButton = document.getElementById('make-green');
-// makeGreenButton.addEventListener('click',
-// function makeGreen(){
-//     document.body.style.backgroundColor = 'green';
-// });
-
-// -----------------------------
-// ----------------------------------------------------------
-// ------------------------------
-
-// // option 4: (final) -----------
-// document.getElementById('make-orange').addEventListener('click',
-// function makeOrange(){
-// document.body.style.backgroundColor = 'orange';
-// });
-
 // random hover =====
 // function randomColor() {
 //     let color = [];
@@ -45,6 +18,52 @@
 //   document.querySelectorAll('card').addEventListener('mouseover', event => {
 //         event.target.style.fill = randomColor();
 //   });
+const card1 = document .getElementById('card-1');
+card1.addEventListener('mouseover', pink);
+
+function pink(){
+ document.body.style.backgroundColor = 'pink';
+}
+const card2 = document .getElementById('card-2');
+card1.addEventListener('mouseover', plum);
+
+function plum(){
+ document.body.style.backgroundColor = 'plum';
+}
+const card3 = document .getElementById('card-3');
+card1.addEventListener('mouseover', purple);
+
+function purple(){
+ document.body.style.backgroundColor = 'purple';
+}
+
+const card4 = document .getElementById('card-4');
+card1.addEventListener('mouseover', green);
+
+function green(){
+ document.body.style.backgroundColor = 'green';
+}
+
+const card5 = document .getElementById('card-5');
+card1.addEventListener('mouseover', grey);
+
+function grey(){
+ document.body.style.backgroundColor = 'grey';
+}
+
+const card6 = document .getElementById('card-6');
+card1.addEventListener('mouseover', blue);
+
+function blue(){
+ document.body.style.backgroundColor = 'blue';
+}
+
+const card7 = document .getElementById('card-7');
+card1.addEventListener('mouseover', red);
+
+function red(){
+ document.body.style.backgroundColor = 'red';
+}
 
 // blog link ==============
 
