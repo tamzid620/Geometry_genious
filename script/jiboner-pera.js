@@ -18,52 +18,64 @@
 //   document.querySelectorAll('card').addEventListener('mouseover', event => {
 //         event.target.style.fill = randomColor();
 //   });
-const card1 = document .getElementById('card-1');
-card1.addEventListener('mouseover', red);
 
-function red(){
- document.body.style.backgroundColor = 'red';
-}
-const card2 = document .getElementById('card-2');
-card1.addEventListener('mouseover', plum);
+// const card7 = document .getElementById('card-7');
+// card1.addEventListener('mouseover', pink);
 
-function plum(){
- document.body.style.backgroundColor = 'plum';
-}
-const card3 = document .getElementById('card-3');
-card1.addEventListener('mouseover', purple);
+// function pink(){
+//  document.body.style.backgroundColor = 'pink';
+// }
 
-function purple(){
- document.body.style.backgroundColor = 'purple';
-}
+document.getElementById('card-1').addEventListener('mouseover',
+function card1(){
+  const randomNumber = Math.floor(Math.random()* 16777215);
+  const randomCode = '#' + randomNumber.toString(16);
+  document.body.style.backgroundColor = randomCode;
+})
+document.getElementById('card-2').addEventListener('mouseover',
+function card2(){
+  const randomNumber = Math.floor(Math.random()* 16777215);
+  const randomCode = '#' + randomNumber.toString(16);
+  document.body.style.backgroundColor = randomCode;
+})
+document.getElementById('card-3').addEventListener('mouseover',
+function card3(){
+  const randomNumber = Math.floor(Math.random()* 16777215);
+  const randomCode = '#' + randomNumber.toString(16);
+  document.body.style.backgroundColor = randomCode;
+})
+document.getElementById('card-4').addEventListener('mouseover',
+function card4(){
+  const randomNumber = Math.floor(Math.random()* 16777215);
+  const randomCode = '#' + randomNumber.toString(16);
+  document.body.style.backgroundColor = randomCode;
+})
+document.getElementById('card-5').addEventListener('mouseover',
+function card5(){
+  const randomNumber = Math.floor(Math.random()* 16777215);
+  const randomCode = '#' + randomNumber.toString(16);
+  document.body.style.backgroundColor = randomCode;
+})
 
-const card4 = document .getElementById('card-4');
-card1.addEventListener('mouseover', green);
 
-function green(){
- document.body.style.backgroundColor = 'green';
-}
 
-const card5 = document .getElementById('card-5');
-card1.addEventListener('mouseover', grey);
+document.getElementById('card-6').addEventListener('mouseover',
+function card6(event){
+  const randomNumber = Math.floor(Math.random()* 16777215);
+  const randomCode = '#' + randomNumber.toString(16);
+  document.body.style.backgroundColor = randomCode;
 
-function grey(){
- document.body.style.backgroundColor = 'grey';
-}
+})
 
-const card6 = document .getElementById('card-6');
-card1.addEventListener('mouseover', blue);
 
-function blue(){
- document.body.style.backgroundColor = 'blue';
-}
 
-const card7 = document .getElementById('card-7');
-card1.addEventListener('mouseover', pink);
 
-function pink(){
- document.body.style.backgroundColor = 'pink';
-}
+document.getElementById('card-7').addEventListener('mouseover',
+function card7(){
+  const randomNumber = Math.floor(Math.random()* 16777215);
+  const randomCode = '#' + randomNumber.toString(16);
+  document.body.style.backgroundColor = randomCode;
+})
 
 // blog link ==============
 
